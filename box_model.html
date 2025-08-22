@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        div {
+            /* width: 250px; */
+            height: 250px;
+            border: 1px solid black;
+            padding: 2px;
+            /* The default value of box-sizing property is content-box */
+            box-sizing: border-box;
+            overflow: scroll;
+            /* Clock-wise move krega */
+            margin: top right bottom left;
+            /* jab two values den then: */
+            /* margin: top-bottom right-left; */
+
+            /* From this website ' https://cssgenerator.org/box-shadow-css-generator.html ' */
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+            /* From this website 'https://cssgradient.io/' */
+            background: #020024;
+            background: linear-gradient(270deg,#000000, rgb(49, 49, 136) 35%, rgb(255, 255, 255) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- By default, the width and height of an element is calculated like this:
+          width + padding + border = actual width of an element
+          height + padding + border = actual height of an element 
+          this 'width and height' are the properties that're sat by us in CSS. e.g :
+           like width :10px; to actual width 10px nhi hogi, us men padding or border bhi included hoga.
+        The box-sizing property solves this problem.
+           The box-sizing property allows us to include the padding and border in an element's total width and height.
+           If you set box-sizing: border-box; on an element, padding and border are included in the width and height.  -->
+
+    <div>
+        Hello World
+    </div>
+</body>
+
+</html>

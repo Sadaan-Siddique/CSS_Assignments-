@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <title>Text</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        body {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .div_span>span {
+            /* This preperty means apply color to first children of .div_span not on the descendents (Hierarchy)*/
+            color: #047579;
+        }
+
+        /* .div_span span {
+            This preperty means apply color to first children of .div_span as well as on the descendents (Hierarchy)
+            color: #047579;
+        } */
+
+        /* .div_span div span {
+            color: blueviolet;
+        } */
+
+        h1.first-head {
+            font-family: sans-serif;
+            font-size: 20pt;
+            font-weight: bolder;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-indent: 10px;
+            background-image: url('/images/kkkk.jpeg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* background-position: top right; */
+            background-position: calc(100% - 20px) 10px;
+        }
+
+        h1.first-head::first-letter {
+            font-weight: 900;
+            font-size: 34pt;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+        }
+
+        #para {
+            color: #047579;
+        }
+
+        a {
+            text-decoration: none;
+            /* border: 1px solid black; */
+            text-align: center;
+            padding-right: 2px;
+        }
+
+        a .bi-youtube {
+            /* font-weight: 900; */
+            color: rgb(252, 74, 74);
+            vertical-align: middle;
+        }
+
+        a .bi-youtube:hover {
+            color: rgb(255, 0, 0);
+            width: 17px;
+            height: 17px;
+        }
+
+        a+div p {
+            line-height: 1rem;
+            letter-spacing: 0.02rem;
+            word-spacing: 0.05rem;
+            text-align: justify;
+            /* This text-indent property moves the first line of text to the right by amount given in terms of pixels or ems */
+            text-indent: 50px;
+        }
+
+        a+div p::first-line {
+            text-shadow: 1px 1px 0px gray;
+            font-size: larger;
+        }
+
+        a+div+div {
+            border: 1px solid green;
+            text-align: center;
+        }
+
+        span a .bi-arrow-down-square-fill {
+            color: #686868;
+            position: fixed;
+            /* margin-top: calc(100% - 50px); */
+            /* margin-left: calc(100% - 45px); */
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: white;
+        }
+
+        span a .bi-arrow-down-square-fill:hover {
+            color: #2e2e2e; 
+            cursor: pointer;
+            width: 29px;
+            height: 29px;
+        }
+        /* span a .bi-arrow-down-square-fill:visited{
+            color: aqua;
+        } */
+
+        /* 
+        a+div+div img {
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1 class="first-head">Hello World</h1>
+    <h2>hello world</h2>
+    <span>
+        <a href="#footer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0" />
+            </svg>
+        </a>
+    </span>
+    <a href="https://www.youtube.com" target="_blank">
+        <span style="color: red; text-shadow: 1px 1px 0px rgb(241, 178, 178);">Youtube</span>
+        <!-- <i class="bi bi-youtube"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+            viewBox="0 0 16 16">
+            <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+        </svg>
+    </a>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error accusantium quam modi tenetur illo autem
+            nobis, libero officia ipsam laboriosam id aliquam aperiam iusto. Cupiditate beatae eveniet aliquam
+            doloremque qui maiores voluptatum ratione esse fugit totam delectus dicta labore quae dolores at natus iure
+            magnam, tempore voluptatem veritatis! Omnis magnam quas sunt minus soluta quae dolor illo consequuntur
+            laboriosam accusantium assumenda excepturi ut quia dolorem corrupti voluptate quasi in repellendus ullam,
+            reiciendis exercitationem et. Recusandae pariatur iste cum libero saepe! Aspernatur, magni excepturi
+            necessitatibus, impedit voluptate ratione molestias dignissimos fuga porro, sed atque perferendis eligendi
+            hic illum iure ipsa iusto quam repellat dolore voluptatum blanditiis accusantium tempora id. Expedita fuga
+            quis iusto deserunt enim, tempora quo aliquid ipsam! Natus voluptatum exercitationem perferendis vero aut
+            quam ea excepturi fuga necessitatibus quod. Accusantium ex, eius reprehenderit pariatur assumenda aliquam
+            voluptate iure commodi eum rerum sint enim mollitia aut, a autem hic magnam excepturi consequuntur quasi
+            minus possimus vel ratione voluptatum culpa. Ipsa, necessitatibus corrupti. Qui obcaecati amet minima! Ullam
+            expedita consequatur quam vel, laudantium molestiae rem doloribus quisquam eaque iusto ducimus eum natus
+            reprehenderit veritatis dicta assumenda dolorum repellendus, optio debitis incidunt? Saepe quibusdam
+            temporibus optio voluptas dolore ab ea quam, quod, quidem commodi impedit ratione, cum ex ut eius dolorem
+            sed! Distinctio quo nulla laudantium deserunt, repudiandae sit porro veniam enim incidunt. Sit nostrum culpa
+            eius corporis accusantium facilis. Quia, quod. Nemo amet laboriosam veniam quae nihil! Ex iure sed ut
+            explicabo voluptate enim dignissimos expedita dicta? A, suscipit! Voluptatem nemo, exercitationem dolor amet
+            eligendi sed perspiciatis architecto hic aut, corrupti ducimus aperiam itaque facere quo, quaerat totam ad
+            sit officiis quae? Nisi error sed quisquam sint deleniti quaerat laborum tempora beatae nesciunt porro qui
+            provident dolorem impedit perferendis natus aut repellat sunt hic excepturi delectus ea quam minus,
+            laudantium rerum. Tempore porro odit exercitationem, repellendus consequatur similique quia tempora nobis ea
+            laudantium id, amet, perferendis officia unde itaque cum voluptatum inventore eligendi harum deleniti?
+            Asperiores nulla magni, quibusdam ut enim fugiat iusto! Ad temporibus ab debitis consequatur velit vel optio
+            laboriosam, soluta tempore! Sint, odit! Delectus assumenda laboriosam a molestias atque! Voluptatibus
+            explicabo nam libero quo molestiae. Aliquam itaque facilis sunt incidunt, exercitationem odio nulla aperiam
+            obcaecati ea odit quis saepe unde quos velit? Molestias corrupti sapiente molestiae? Aspernatur consequuntur
+            dolorum ullam molestias omnis vero consequatur quisquam deserunt quas, quae nihil? Consectetur sint, velit
+            veritatis quisquam error delectus aliquid autem perspiciatis architecto esse iure! Adipisci nostrum, natus
+            expedita, quia quidem facere aspernatur hic saepe eligendi sed rerum odit nulla minima delectus, dolorum
+            dolorem dignissimos ut eaque molestiae. Labore dolor a odit magnam debitis praesentium iusto quam soluta at
+            error reprehenderit earum maiores ducimus voluptas est tenetur, minus alias molestias id! Totam praesentium,
+            facere aperiam doloremque eaque voluptates ipsum nobis explicabo vitae rerum nam dignissimos accusantium
+            cupiditate ad voluptas ullam perferendis. Qui ratione doloremque nulla. Obcaecati vero reprehenderit a nulla
+            mollitia ad necessitatibus amet molestias! Provident inventore ut, quaerat minima quisquam ea distinctio
+            dignissimos, eaque ullam iusto non expedita accusantium reiciendis!</p>
+    </div>
+    <div>
+        <img src="/images/color image.jpg" alt="img" width="200px" height="200px">
+    </div>
+    <p id="para">para</p><br>
+    <p id="para">para</p><br>
+    <p id="para">para</p><br>
+    <p id="para">para</p><br>
+
+    <span>Span 1</span>
+    <span>Span 1</span>
+    <span>Span 1</span>
+    <span>Span 1</span>
+
+    <div class="div_span" id="footer">
+        <div>
+            <span>First Div span</span>
+        </div>
+        <div>
+            <span>second Div span</span>
+        </div>
+        <div>
+            <span>third Div span</span>
+        </div>
+        <span>Span 1</span>
+        <span>Span 1</span>
+        <span>Span 1</span>
+        <span>Span 1</span>
+    </div>
+
+</body>
+
+</html>

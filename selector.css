@@ -1,0 +1,36 @@
+/*------- CSS Methods ------- */
+/* External CSS */
+/* Internal CSS (Style Tag) */
+/* Inline CSS */
+
+/* ------ Basic Selector -------- */
+/* By Tag name */
+/* By ID */
+/* By Class */
+
+* {
+    /* background-color: whitesmoke; */
+}
+
+div {
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+}
+
+h1 {
+    /* this !important keyword makes the relative property obligatory than anyother ( e.g than style tag or than inline-CSS */
+    /* Remember this !important keyword can also be used in style tag (internal CSS) and in inline-CSS  */
+    border: 1px solid black !important; 
+}
+
+/* Following selector means that ke sirf h2 ke first_child wale tags ka color change kro */
+h2.first_child{
+    color: brown;
+}
+h1.first_child{
+    color: blue;
+}
+/* 
+.first_child < span {
+
+} */

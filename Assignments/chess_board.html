@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Chess Board</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* parent */
+        .main_div {
+            width: 100%;
+            max-width: 100vw;
+            margin: 0 auto;
+            height: 100vh;
+            /* <--- entire viewport */
+            overflow: hidden;
+            /* ensure no accidental scroll */
+            background-color: white;
+        }
+
+        /* each row */
+        .main_div>.container_1 {
+            width: 100%;
+            font-size: 0;
+            /* removes inline-block whitespace gap */
+            height: calc(100% / 8);
+            /* 1/8th of .main_div */
+            font-size: 0;
+            /* remove inline-block whitespace */
+            line-height: 0;
+        }
+
+        /* cells */
+        .main_div>.container_1>div {
+            display: inline-block;
+            width: calc(100% / 8);
+            /* 8 columns */
+            /* aspect-ratio: 1 / 1; */
+            /* keeps cell square */
+            /* font-size: 8px; */
+            /* reset font-size inside cell if needed */
+            background: #fff;
+            height: 100%;
+            /* same height 2as its row */
+            vertical-align: top;
+            font-size:40pt ;
+            /* restore font-size inside cell if needed */
+        }
+
+        /* colouring for chessboard */
+        .main_div>.container_1:nth-child(odd)>div:nth-child(even),
+        .main_div>.container_1:nth-child(even)>div:nth-child(odd) {
+            background: #000;
+            color: #fff;
+        }
+
+        .main_div .container_1 div:hover {
+            color: #000000a2;
+        }
+
+        .main_div .container_1 div:active {
+            color: red;
+        }
+
+        .main_div>.container_1:nth-child(odd)>div:nth-child(even):hover,
+        .main_div>.container_1:nth-child(even)>div:nth-child(odd):hover {
+            background: #000000a2;
+        }
+
+        .main_div>.container_1:nth-child(odd)>div:nth-child(even):active,
+        .main_div>.container_1:nth-child(even)>div:nth-child(odd):active {
+            background: red;
+        }
+
+
+        /* optional: center any content in a cell */
+        .main_div .container_1>div>* {
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div><i class="fa-solid fa-chess-rook"></i></div>
+            <div><i class="fa-solid fa-chess-knight"></i></div>
+            <div><i class="fa-solid fa-chess-bishop"></i></div>
+            <div><i class="fa-solid fa-chess-king"></i></div>
+            <div><i class="fa-solid fa-chess-queen"></i></div>
+            <div><i class="fa-solid fa-chess-bishop"></i></div>
+            <div><i class="fa-solid fa-chess-knight"></i></div>
+            <div><i class="fa-solid fa-chess-rook"></i></div>
+        </div>
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+        </div>
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+            <div><i class="fa-solid fa-chess-pawn"></i></div>
+        </div>
+        <div class="container_1">
+            <!-- <img src="./images/rook.png" alt="rook"> -->
+            <!-- <i class="fa-solid fa-chess-rook"></i> -->
+            <div><i class="fa-solid fa-chess-rook"></i></div>
+            <div><i class="fa-solid fa-chess-knight"></i></div>
+            <div><i class="fa-solid fa-chess-bishop"></i></div>
+            <div><i class="fa-solid fa-chess-king"></i></div>
+            <div><i class="fa-solid fa-chess-queen"></i></div>
+            <div><i class="fa-solid fa-chess-bishop"></i></div>
+            <div><i class="fa-solid fa-chess-knight"></i></div>
+            <div><i class="fa-solid fa-chess-rook"></i></div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
