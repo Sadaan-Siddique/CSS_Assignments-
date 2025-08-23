@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .main_div {
     margin: 5px;
 }
@@ -12,6 +13,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 10px 0px;
 }
 
 .main_div .container .video_card {
@@ -27,7 +29,8 @@
     box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 .video_img {
