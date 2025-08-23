@@ -10,6 +10,8 @@
 
 .main_div .container {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main_div .container .video_card {
@@ -18,6 +20,7 @@
     border: 1px solid #aaa;
     border-radius: 2px;
     padding: 2px;
+
 }
 
 .main_div .container .video_card:hover {
