@@ -12,8 +12,13 @@
 .main_div .container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     margin: 10px 0px;
+    padding: 0;
+}
+
+.main_div .container a {
+    text-decoration: none;
 }
 
 .main_div .container .video_card {
@@ -21,8 +26,6 @@
     padding: 2px;
     border: 1px solid #aaa;
     border-radius: 2px;
-    padding: 2px;
-
 }
 
 .main_div .container .video_card:hover {
@@ -85,12 +88,13 @@
 }
 
 .video_card .video_content .video_logo img:hover {
-    width: 103%;
-    height: 103%;
+    width: 105%;
+    height: 105%;
 }
 
 .video_card .video_content .video_title {
     width: 70%;
+    color: black;
 }
 
 .video_title p {
